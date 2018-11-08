@@ -1,0 +1,72 @@
+.contenu-visible > .illustr-left{
+	float:left;
+	margin-right:1em;
+	width:30%;
+}
+.contenu-hidden > .illustr-left{
+	height:0;
+}
+.logo-hidden{
+	opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 1s;
+	opacity:0;
+	height:0; 
+ }
+ 
+.logo-visible{
+	opacity: 0;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	opacity:1;
+	height:100%;
+	
+	
+}
+.contenu-hidden{
+	opacity: 1;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 2s;
+	opacity:0;
+	height:0;
+}
+.contenu-visible{
+	opacity: 0;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	opacity:1;
+	height:100%;
+	
+}
+.very-hidden{
+	opacity:0;
+	height:0;
+}
+.very-hidden >.illustr-left{
+	height:0;
+}
+}
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fadeOInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
